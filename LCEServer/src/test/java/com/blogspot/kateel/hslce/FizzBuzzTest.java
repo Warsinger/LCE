@@ -1,6 +1,7 @@
 package com.blogspot.kateel.hslce;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -44,7 +45,8 @@ public class FizzBuzzTest {
         fb.printFizzBuzz(1, fb.getChunkSize() * 3);
     }
 
-    @Test
+    // DON'T run this test unless you want to wait a long time and probably run out of memory in the test output reader
+    @Ignore
     public void testPrintFizzBuzzMaxInt() throws Exception {
         fb.printFizzBuzz(Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
